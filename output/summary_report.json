@@ -1,0 +1,85 @@
+{
+    "start_time": "2026-10-06T10:04:53Z",
+    "end_time": "2026-10-06T10:26:56Z",
+    "duration_seconds": 1322.9,
+    "collected_per_source": {
+        "Books to Scrape": 1000,
+        "Quotes to Scrape": 100
+    },
+    "cleaned_per_source": {
+        "Books to Scrape": 1000,
+        "Quotes to Scrape": 100
+    },
+    "rejected_per_source": {
+        "Books to Scrape": 0,
+        "Quotes to Scrape": 0
+    },
+    "rejected_by_reason": {
+        "unknown_source": 0,
+        "missing_name": 0,
+        "invalid_url": 0,
+        "invalid_price": 0,
+        "invalid_rating": 0,
+        "parse_error": 0,
+        "cleaning_error": 0
+    },
+    "duplicates_detected": 1,
+    "final_per_source": {
+        "Books to Scrape": 999,
+        "Quotes to Scrape": 100
+    },
+    "final_record_count": 1099,
+    "reconciliation": {
+        "raw_total": 1100,
+        "rejected_total": 0,
+        "duplicates_total": 1,
+        "final_total": 1099,
+        "balanced": true
+    },
+    "sources": {
+        "Books to Scrape": {
+            "status": "completed",
+            "stop_reason": "",
+            "pages_fetched": 50,
+            "pages_failed": 0,
+            "raw_collected": 1000,
+            "cleaned": 1000,
+            "rejected_records": 0,
+            "rejected_by_reason": {
+                "unknown_source": 0,
+                "missing_name": 0,
+                "invalid_url": 0,
+                "invalid_price": 0,
+                "invalid_rating": 0,
+                "parse_error": 0,
+                "cleaning_error": 0
+            },
+            "valid_before_dedup": 1000,
+            "duplicates": 1,
+            "final": 999,
+            "detail_pages_fetched": 1000,
+            "detail_pages_failed": 0
+        },
+        "Quotes to Scrape": {
+            "status": "completed",
+            "stop_reason": "",
+            "pages_fetched": 10,
+            "pages_failed": 0,
+            "raw_collected": 100,
+            "cleaned": 100,
+            "rejected_records": 0,
+            "rejected_by_reason": {
+                "unknown_source": 0,
+                "missing_name": 0,
+                "invalid_url": 0,
+                "invalid_price": 0,
+                "invalid_rating": 0,
+                "parse_error": 0,
+                "cleaning_error": 0
+            },
+            "valid_before_dedup": 100,
+            "duplicates": 0,
+            "final": 100
+        }
+    }
+}
