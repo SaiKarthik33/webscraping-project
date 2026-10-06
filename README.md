@@ -1,6 +1,6 @@
 # Web Data Pipeline: Books to Scrape + Quotes to Scrape
 
-A small ETL pipeline. One command (`python main.py`) scrapes both practice sites, cleans and
+A small ETL pipeline. One command (`py main.py`) scrapes both practice sites, cleans and
 validates every record, removes duplicates, and writes one tidy CSV, a JSON summary and a log.
 
 ```
@@ -13,17 +13,17 @@ Developed and tested on Python 3.12 (works on 3.10 - 3.12). Libraries: `requests
 
 ## Setup
 ```bash
-python -m venv venv
+py -m venv venv
 source venv/bin/activate            # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 ## How to run
 ```bash
-python main.py                      # full run: ~1,000 books incl. detail pages + 100 quotes
-python main.py --skip-details       # much faster: books keep empty category/description
-python main.py --max-pages 2        # quick smoke test (2 pages per site)
-python -m pytest                    # unit tests, no internet needed
+py main.py                      # full run: ~1,000 books incl. detail pages + 100 quotes
+py main.py --skip-details       # much faster: books keep empty category/description
+py main.py --max-pages 2        # quick smoke test (2 pages per site)
+py -m pytest                    # unit tests, no internet needed
 ```
 A full run visits 50 listing pages + ~1,000 book detail pages + 10 quote pages with a 0.5 s pause after every
 request, so expect roughly 10-20 minutes depending on the network. Outputs:
